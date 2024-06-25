@@ -1,0 +1,556 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Network Info (netscan)</title>
+    <link href="../resources/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    
+  <script type="text/javascript" src="../resources/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="../resources/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="../resources/js/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="../resources/js/jquery.tablesorter.pager.js"></script>
+  <script type="text/javascript" src="../resources/js/widget-storage.js"></script>
+  <script type="text/javascript" src="../resources/js/widget-print.js"></script>
+  <script type="text/javascript" src="../resources/js/widget-filter.js"></script>
+  <script type="text/javascript" src="../resources/js/widget-stickyHeaders.js"></script>
+  <script type="text/javascript" src="../resources/js/jquery.tablesorter.bootstrap.js"></script>
+</head>
+<body>
+  <div class="page-header">
+    <div id="page-title">Network Info (netscan)</div>
+    <div id="header-search">
+      Search: <input class="search" type="search" data-column="all">
+      <span class="print button"><img id="printer-pic" src="../Resources/images/printer_white.png" title="Print this page" /></span>
+    </div>
+  </div>
+  <div id="wrapper">
+   <table class="tablesorter">
+      <thead>
+        <tr role="row" class="tablesorter-headerRow">
+          <th data-column="0" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Record<i class="tablesorter-icon"></i></div></th>
+                        <th data-column="0" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Tags<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="1" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Comments<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="2" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Protocol<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="3" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Local IP Address<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="4" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Remote IP Address<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="5" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">State<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="6" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Process ID<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="7" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Owner<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="8" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Created Date/Time - UTC+00:00 (d-M-yyyy)<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="9" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Source<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="10" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Location<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="11" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Evidence number<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="12" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Deleted source<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="13" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Recovery method<i class="tablesorter-icon"></i></div></th>
+                          <th data-column="14" class="tablesorter-header tablesorter-headerAsc" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="ascending" aria-label="Name: Ascending sort applied, activate to apply a descending sort" style="user-select: none;"><div class="tablesorter-header-inner">Item ID<i class="tablesorter-icon"></i></div></th>
+                      </tr>
+       </thead>
+       <tbody aria-live="polite" aria-relevant="all">
+                      <tr role="row">
+             <td>1</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>0.0.0.0:49668</td>
+                              <td>0.0.0.0:0</td>
+                              <td>LISTENING</td>
+                              <td>1740</td>
+                              <td>spoolsv.exe</td>
+                              <td>22-6-2023 14:24:53</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742423295440</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9222</td>
+                          </tr>
+                      <tr role="row">
+             <td>2</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>0.0.0.0:445</td>
+                              <td>0.0.0.0:0</td>
+                              <td>LISTENING</td>
+                              <td>4</td>
+                              <td>System</td>
+                              <td>22-6-2023 14:24:54</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742423297200</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9225</td>
+                          </tr>
+                      <tr role="row">
+             <td>3</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>0.0.0.0:49669</td>
+                              <td>0.0.0.0:0</td>
+                              <td>LISTENING</td>
+                              <td>640</td>
+                              <td>services.exe</td>
+                              <td>22-6-2023 14:24:54</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742423296496</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9228</td>
+                          </tr>
+                      <tr role="row">
+             <td>4</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv6</td>
+                              <td>:::49669</td>
+                              <td>:::0</td>
+                              <td>LISTENING</td>
+                              <td>640</td>
+                              <td>services.exe</td>
+                              <td>22-6-2023 14:24:54</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742423296848</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9229</td>
+                          </tr>
+                      <tr role="row">
+             <td>5</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>0.0.0.0:49669</td>
+                              <td>0.0.0.0:0</td>
+                              <td>LISTENING</td>
+                              <td>640</td>
+                              <td>services.exe</td>
+                              <td>22-6-2023 14:24:54</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742423296848</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9231</td>
+                          </tr>
+                      <tr role="row">
+             <td>6</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv6</td>
+                              <td>:::49668</td>
+                              <td>:::0</td>
+                              <td>LISTENING</td>
+                              <td>1740</td>
+                              <td>spoolsv.exe</td>
+                              <td>22-6-2023 14:24:53</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742423295440</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9232</td>
+                          </tr>
+                      <tr role="row">
+             <td>7</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv6</td>
+                              <td>:::445</td>
+                              <td>:::0</td>
+                              <td>LISTENING</td>
+                              <td>4</td>
+                              <td>System</td>
+                              <td>22-6-2023 14:24:54</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742423297200</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9234</td>
+                          </tr>
+                      <tr role="row">
+             <td>8</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>0.0.0.0:49667</td>
+                              <td>0.0.0.0:0</td>
+                              <td>LISTENING</td>
+                              <td>412</td>
+                              <td>svchost.exe</td>
+                              <td>22-6-2023 14:24:52</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742440894544</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9461</td>
+                          </tr>
+                      <tr role="row">
+             <td>9</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv6</td>
+                              <td>:::49667</td>
+                              <td>:::0</td>
+                              <td>LISTENING</td>
+                              <td>412</td>
+                              <td>svchost.exe</td>
+                              <td>22-6-2023 14:24:52</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742440894544</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9465</td>
+                          </tr>
+                      <tr role="row">
+             <td>10</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>192.168.133.137:139</td>
+                              <td>0.0.0.0:0</td>
+                              <td>LISTENING</td>
+                              <td>4</td>
+                              <td>System</td>
+                              <td>22-6-2023 14:24:52</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742440894896</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9466</td>
+                          </tr>
+                      <tr role="row">
+             <td>11</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>0.0.0.0:135</td>
+                              <td>0.0.0.0:0</td>
+                              <td>LISTENING</td>
+                              <td>876</td>
+                              <td>svchost.exe</td>
+                              <td>22-6-2023 14:24:52</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742440895600</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9467</td>
+                          </tr>
+                      <tr role="row">
+             <td>12</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>0.0.0.0:49668</td>
+                              <td>0.0.0.0:0</td>
+                              <td>LISTENING</td>
+                              <td>1740</td>
+                              <td>spoolsv.exe</td>
+                              <td>22-6-2023 14:24:53</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742440897360</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9468</td>
+                          </tr>
+                      <tr role="row">
+             <td>13</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>1404</td>
+                              <td>msedge.exe</td>
+                              <td>22-6-2023 14:26:41</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742489633840</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9748</td>
+                          </tr>
+                      <tr role="row">
+             <td>14</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>5988</td>
+                              <td>svchost.exe</td>
+                              <td>22-6-2023 14:25:16</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742491096000</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9779</td>
+                          </tr>
+                      <tr role="row">
+             <td>15</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>5044</td>
+                              <td>msedge.exe</td>
+                              <td>22-6-2023 14:25:29</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742498728048</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9809</td>
+                          </tr>
+                      <tr role="row">
+             <td>16</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv6</td>
+                              <td>:::0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>5044</td>
+                              <td>msedge.exe</td>
+                              <td>22-6-2023 14:25:29</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742498728048</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9811</td>
+                          </tr>
+                      <tr role="row">
+             <td>17</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>4</td>
+                              <td>System</td>
+                              <td>22-6-2023 14:24:52</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742499402672</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9825</td>
+                          </tr>
+                      <tr role="row">
+             <td>18</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>412</td>
+                              <td>svchost.exe</td>
+                              <td>22-6-2023 14:24:54</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742504423600</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9861</td>
+                          </tr>
+                      <tr role="row">
+             <td>19</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>192.168.133.137:49826</td>
+                              <td>20.72.146.34:443</td>
+                              <td>CLOSE_WAIT</td>
+                              <td>-1</td>
+                              <td></td>
+                              <td></td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742510314096</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9917</td>
+                          </tr>
+                      <tr role="row">
+             <td>20</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>1404</td>
+                              <td>msedge.exe</td>
+                              <td>22-6-2023 14:25:45</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742511433952</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9942</td>
+                          </tr>
+                      <tr role="row">
+             <td>21</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>192.168.133.137:49671</td>
+                              <td>20.7.2.167:443</td>
+                              <td>ESTABLISHED</td>
+                              <td>-1</td>
+                              <td></td>
+                              <td></td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742512023472</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9944</td>
+                          </tr>
+                      <tr role="row">
+             <td>22</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>1148</td>
+                              <td>svchost.exe</td>
+                              <td>22-6-2023 14:24:59</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742511458352</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>9950</td>
+                          </tr>
+                      <tr role="row">
+             <td>23</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>1404</td>
+                              <td>msedge.exe</td>
+                              <td>22-6-2023 14:25:42</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742525909232</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>10120</td>
+                          </tr>
+                      <tr role="row">
+             <td>24</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>192.168.133.137:49823</td>
+                              <td>13.69.109.130:443</td>
+                              <td>CLOSED</td>
+                              <td>-1</td>
+                              <td></td>
+                              <td></td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742531170320</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>10162</td>
+                          </tr>
+                      <tr role="row">
+             <td>25</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>TCPv4</td>
+                              <td>192.168.133.137:49902</td>
+                              <td>13.68.233.9:443</td>
+                              <td>ESTABLISHED</td>
+                              <td>-1</td>
+                              <td></td>
+                              <td></td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742532043936</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>10175</td>
+                          </tr>
+                      <tr role="row">
+             <td>26</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>1404</td>
+                              <td>msedge.exe</td>
+                              <td>22-6-2023 14:32:39</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742544333632</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>10269</td>
+                          </tr>
+                      <tr role="row">
+             <td>27</td>
+                              <td><ul></ul></td>
+                              <td><ul></ul></td>
+                              <td>UDPv4</td>
+                              <td>0.0.0.0:0</td>
+                              <td>*:*</td>
+                              <td></td>
+                              <td>1404</td>
+                              <td>msedge.exe</td>
+                              <td>22-6-2023 14:32:45</td>
+                              <td><ul><li>DESKTOP-JKS05LO-20230622-143255.raw</li></ul></td>
+                              <td><ul><li>File Offset 217742544366832</li></ul></td>
+                              <td>DESKTOP-JKS05LO-20230622-143255.raw</td>
+                              <td></td>
+                              <td>Parsing</td>
+                              <td>10270</td>
+                          </tr>
+                 </tbody>
+    </table>
+    <div class="pager tablesorter-pager">
+      Page:
+      <select class="gotoPage" aria-disabled="false">
+      </select>
+      <img src="../resources/images/first.png" class="first" alt="First" title="First page" tabindex="0" aria-disabled="false">
+      <img src="../resources/images/prev.png" class="prev" alt="Prev" title="Previous page" tabindex="0" aria-disabled="false">
+      <span class="pagedisplay">&nbsp;</span> <!-- this can be any element, including an input -->
+      <img src="../resources/images/next.png" class="next disabled" alt="Next" title="Next page" tabindex="0" aria-disabled="true">
+      <img src="../resources/images/last.png" class="last disabled" alt="Last" title="Last page" tabindex="0" aria-disabled="true">
+      <select class="pagesize" aria-disabled="false">
+        <option value="100" selected="selected">100</option>
+        <option value="250">250</option>
+        <option value="500">500</option>
+        <option value="1000">1000</option>
+        <option value="all">All</option>
+      </select>
+    </div>
+  </body>
+</html>

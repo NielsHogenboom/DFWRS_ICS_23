@@ -1,0 +1,149 @@
+﻿{
+  "odata.metadata": "http://github.com/ICMEC/ProjectVic/DataModels/1.3.xml#Cases",
+  "value": [
+    {
+      "odata.id": "Case(\"8da27b13-79d7-4577-82b1-1fc26f661e29\")",
+      "odata.editLink": "/Case(8da27b13-79d7-4577-82b1-1fc26f661e29)",
+      "Identifiers@odata.navigationLinkUrl": "/Case(8da27b13-79d7-4577-82b1-1fc26f661e29)/Identifiers",
+      "Identifiers": [
+        {
+          "odata.id": "Identifier(\"3193652c21e94cb993e4e96142eb0ab9\")",
+          "odata.editLink": "/Identifier(3193652c21e94cb993e4e96142eb0ab9)",
+          "MD5": "3193652c21e94cb993e4e96142eb0ab9",
+          "Name": "A87444C1",
+          "Application": "LNK Files",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"15349fc64fd1fc94035c8cd543681522\")",
+          "odata.editLink": "/Identifier(15349fc64fd1fc94035c8cd543681522)",
+          "MD5": "15349fc64fd1fc94035c8cd543681522",
+          "Name": "00:0C:29:A0:E9:07",
+          "Application": "LNK Files",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"1bbdb20067bd788f929fa04b9d47d64c\")",
+          "odata.editLink": "/Identifier(1bbdb20067bd788f929fa04b9d47d64c)",
+          "MD5": "1bbdb20067bd788f929fa04b9d47d64c",
+          "Name": "DESKTOP-JKS05LO",
+          "Application": "Windows Event Logs",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"9c3602bdbbac4ed967f8c6d9a0079601\")",
+          "odata.editLink": "/Identifier(9c3602bdbbac4ed967f8c6d9a0079601)",
+          "MD5": "9c3602bdbbac4ed967f8c6d9a0079601",
+          "Name": "WIN-F6AA90AC707",
+          "Application": "Windows Event Logs",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"0d27137b84d484fb7fb93457cf6fcefc\")",
+          "odata.editLink": "/Identifier(0d27137b84d484fb7fb93457cf6fcefc)",
+          "MD5": "0d27137b84d484fb7fb93457cf6fcefc",
+          "Name": "\\VOLUME{01d68615743644aa-a87444c1}",
+          "Application": "Prefetch Files - Windows 8/10",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"18d24269e09262caeae73b63e488e31d\")",
+          "odata.editLink": "/Identifier(18d24269e09262caeae73b63e488e31d)",
+          "MD5": "18d24269e09262caeae73b63e488e31d",
+          "Name": "00:11:09:07:7E:DD",
+          "Application": "LNK Files",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"361d64e59a75f7367480c44a31b560c4\")",
+          "odata.editLink": "/Identifier(361d64e59a75f7367480c44a31b560c4)",
+          "MD5": "361d64e59a75f7367480c44a31b560c4",
+          "Name": "\f؀\u0000㴀",
+          "Application": "Prefetch Files - Windows 8/10",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"e10614fd9253dfd5bd34cbef5c0a5d8d\")",
+          "odata.editLink": "/Identifier(e10614fd9253dfd5bd34cbef5c0a5d8d)",
+          "MD5": "e10614fd9253dfd5bd34cbef5c0a5d8d",
+          "Name": "514EEAC1",
+          "Application": "LNK Files",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"a50ada99923fdec8ed15a3528c6ea5ec\")",
+          "odata.editLink": "/Identifier(a50ada99923fdec8ed15a3528c6ea5ec)",
+          "MD5": "a50ada99923fdec8ed15a3528c6ea5ec",
+          "Name": "S-1-5-21-2995338997-3818539084-3023894279-1000",
+          "Application": "Windows Event Logs",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"67795e98229f004a42d43d5ce62d007e\")",
+          "odata.editLink": "/Identifier(67795e98229f004a42d43d5ce62d007e)",
+          "MD5": "67795e98229f004a42d43d5ce62d007e",
+          "Name": "LocalService",
+          "Application": "Windows Event Logs",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"892af2fb7e04d440981c6f551264e403\")",
+          "odata.editLink": "/Identifier(892af2fb7e04d440981c6f551264e403)",
+          "MD5": "892af2fb7e04d440981c6f551264e403",
+          "Name": "S-1-5-21-2995338997-3818539084-3023894279-1001",
+          "Application": "Windows Event Logs",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"6687a518129a05e07d6d0cdcf396715d\")",
+          "odata.editLink": "/Identifier(6687a518129a05e07d6d0cdcf396715d)",
+          "MD5": "6687a518129a05e07d6d0cdcf396715d",
+          "Name": "LocalSystem",
+          "Application": "Windows Event Logs",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        },
+        {
+          "odata.id": "Identifier(\"bda663c92472a9b4887f16624f050510\")",
+          "odata.editLink": "/Identifier(bda663c92472a9b4887f16624f050510)",
+          "MD5": "bda663c92472a9b4887f16624f050510",
+          "Name": "NetworkService",
+          "Application": "Windows Event Logs",
+          "Comments": "",
+          "IdentifierType": "UserName",
+          "Tags": ""
+        }
+      ],
+      "CaseID": "8da27b13-79d7-4577-82b1-1fc26f661e29",
+      "CaseNumber": "1",
+      "ContactOrganization": "hsleiden",
+      "ContactName": null,
+      "ContactPhone": null,
+      "ContactEmail": null,
+      "ContactTitle": null
+    }
+  ]
+}
